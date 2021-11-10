@@ -68,5 +68,14 @@ namespace KH2FMToolbox
                 KH2.AddWeaponSora(Keyblade.SleepingLion);
             else MessageBox.Show("Invalid Keyblade");
         }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+            if (comboBox2.Text == "Save the Queen+")
+                KH2.AddWeaponDonald(Staff.SaveTheQueenPlus);
+            else if (comboBox2.Text == "Centurion+")
+                KH2.AddWeaponDonald(Staff.CentrurionPlus);
+            else MessageBox.Show("Invalid Staff");
+        }
     }
 }
