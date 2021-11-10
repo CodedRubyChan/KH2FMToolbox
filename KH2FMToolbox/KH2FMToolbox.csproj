@@ -10,7 +10,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="KHMemLibrary" Version="1.2.0" />
+    <PackageReference Include="KHMemLibrary" Version="1.2.8" />
   </ItemGroup>
 
 </Project>
