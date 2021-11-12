@@ -5,6 +5,8 @@ VisualStudioVersion = 17.1.31903.286
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KH2FMToolbox", "KH2FMToolbox\KH2FMToolbox.csproj", "{DF3B003E-AD1B-4E97-AE7D-7B52EC5BC752}"
 EndProject
+Project("{54435603-DBB4-11D2-8724-00A0C9A8B90C}") = "ToolboxSetup", "ToolboxSetup\ToolboxSetup.vdproj", "{611404A6-CB96-49A6-B9A9-5E630AB9C22C}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,12 +17,16 @@ Global
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{DF3B003E-AD1B-4E97-AE7D-7B52EC5BC752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DF3B003E-AD1B-4E97-AE7D-7B52EC5BC752}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DF3B003E-AD1B-4E97-AE7D-7B52EC5BC752}.Debug|x64.ActiveCfg = Debug|x64
-		{DF3B003E-AD1B-4E97-AE7D-7B52EC5BC752}.Debug|x64.Build.0 = Debug|x64
-		{DF3B003E-AD1B-4E97-AE7D-7B52EC5BC752}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DF3B003E-AD1B-4E97-AE7D-7B52EC5BC752}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF3B003E-AD1B-4E97-AE7D-7B52EC5BC752}.Debug|x64.ActiveCfg = Release|Any CPU
+		{DF3B003E-AD1B-4E97-AE7D-7B52EC5BC752}.Debug|x64.Build.0 = Release|Any CPU
+		{DF3B003E-AD1B-4E97-AE7D-7B52EC5BC752}.Release|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF3B003E-AD1B-4E97-AE7D-7B52EC5BC752}.Release|Any CPU.Build.0 = Debug|Any CPU
 		{DF3B003E-AD1B-4E97-AE7D-7B52EC5BC752}.Release|x64.ActiveCfg = Release|x64
 		{DF3B003E-AD1B-4E97-AE7D-7B52EC5BC752}.Release|x64.Build.0 = Release|x64
+		{611404A6-CB96-49A6-B9A9-5E630AB9C22C}.Debug|Any CPU.ActiveCfg = Debug
+		{611404A6-CB96-49A6-B9A9-5E630AB9C22C}.Debug|x64.ActiveCfg = Release
+		{611404A6-CB96-49A6-B9A9-5E630AB9C22C}.Release|Any CPU.ActiveCfg = Release
+		{611404A6-CB96-49A6-B9A9-5E630AB9C22C}.Release|x64.ActiveCfg = Release
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

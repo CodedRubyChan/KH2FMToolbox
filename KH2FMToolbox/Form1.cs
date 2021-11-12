@@ -1,4 +1,5 @@
 using System;
+using System.Threading;
 using KHMemLibrary;
 using KHMemLibrary.KH2FMLib;
 
@@ -7,6 +8,7 @@ namespace KH2FMToolbox
     public partial class Form1 : Form
     {
         public static KH2FM KH2 = new KH2FM();
+
         public Form1()
         {
             InitializeComponent();
@@ -76,6 +78,54 @@ namespace KH2FMToolbox
             else if (comboBox2.Text == "Centurion+")
                 KH2.AddWeaponDonald(Staff.CentrurionPlus);
             else MessageBox.Show("Invalid Staff");
+        }
+
+        private void button10_Click(object sender, EventArgs e)
+        {
+            //timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+        /*    if (comboBoxEvents.Text == "Sephiroth Battle")
+            {
+                if (KH2.isMapLoaded() == false)
+                {
+                    KH2.FPS(FPSValue.FPS30);
+                    KH2.Event(0x04, 0x01, 0x4B);
+                }
+                else
+                {
+                    KH2.FPS(FPSValue.FPS60);
+                }
+            }
+            else
+            {
+                MessageBox.Show("Invalid Event");
+            }
+            Thread.Sleep(5000);
+            timer1.Stop(); */
+        }   
+        
+        private void button11_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("WorldID: " + KH2.FetchWorldID() + "\n" + "RoomID: " + KH2.FetchRoomID());
+        }
+
+        private async void button12_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show($"{await KH2.FetchWorldText()}\n{await KH2.FetchRoomText()}");
+        }
+
+        private void button13_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("FPS: " + KH2.FetchFPS());
+        }
+
+        private void button14_Click(object sender, EventArgs e)
+        {
+            //int count = Convert.ToInt32(numericUpDown1.Value);
+            //KH2.Level(count);
         }
     }
 }

@@ -361,3 +361,10 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+
+# ToolboxSetup Folder
+ToolboxSetup/
+
+# HistoryVersion Folder
+KH2FMToolbox-HistoryVersion/
+/KH2FMToolbox-VersionHistory/KH2FM Toolbox v0.1
